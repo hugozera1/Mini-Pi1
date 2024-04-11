@@ -49,46 +49,22 @@ body{
     transform: translateY(-10px);
 }
 
-.after-items1{
-    opacity: 0;
-    display: none ;
-    transition: all 0.2s linear ;
-
+.after-items1, 
+.after-items2, 
+.after-items3, 
+.after-items4 {
+    display: none; 
 }
 
-.after-items2{
-    display: none;
-}
 
-.after-items3{
-    display: none;
-}
-
-.after-items4{
-    display: none;
-}
-
-.item1:hover .after-items1{
+.item1 .minecraft-item-pickaxe:hover + .after-items1,
+.item2 .minecraft-item:hover + .after-items2,
+.item3 .minecraft-item:hover + .after-items3,
+.item4 .minecraft-item:hover + .after-items4 {
     display: flex;
     flex-direction: column;
     opacity: 1;
 }
-
-.item2:hover .after-items2{
-    display: flex;
-    flex-direction: column;
-}
-
-.item3:hover .after-items3{
-    display: flex;
-    flex-direction: column;
-}
-
-.item4:hover .after-items4{
-    display: flex;
-    flex-direction: column;
-}
-
 
 .text-center{
     text-align: center;
