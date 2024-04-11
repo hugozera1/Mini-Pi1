@@ -14,41 +14,87 @@ body{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    background-color: rgb(38, 36, 47);
-    flex-wrap: wrap;
-    
-    
+    background-color: rgb(38, 36, 47); 
 }
 .container-nav a{
     color: gold;
     text-decoration: none;
-
-}
-.container-weapons{
-background-color: blue;    
-justify-content: center;
-display: flex;
-flex-wrap: nowrap;
-
-}
-.conainter-body{
-    background-color: yellow;
-
-
 }
 .container{
     display: flex;
     justify-content: center;
-    
-    
-    
 }
-.container-body{
+.container-body {
+    margin: 0;
+    background-color: rgba(30, 30, 222, 0.129);
     display: flex;
-    
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 900px;
 }
-#textInput{
-    width: 200px;
 
+
+.item-container{
+    display: flex;
+    height: 800px;
+}
+
+.minecraft-item {
+    transition: 500ms;
+}
+
+.minecraft-item:hover {
+    transform: translateY(-10px);
+}
+
+.after-items1{
+    opacity: 0;
+    display: none;
+    transition: all 0.2s linear ;
+
+}
+
+.after-items2{
+    display: none;
+    
+}
+
+.after-items3{
+    display: none;
+}
+
+.after-items4{
+    display: none;
+}
+
+.item1:hover .after-items1{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.item2:hover .after-items2{
+    display: flex;
+    flex-direction: column;
+}
+
+.item3:hover .after-items3{
+    display: flex;
+    flex-direction: column;
+}
+
+.item4:hover .after-items4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-center{
+    text-align: center;
+}
+.full-content{
+    justify-content: center;
+    display: flex;
 }
