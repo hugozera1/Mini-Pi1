@@ -13,9 +13,9 @@
         </div>
         <div class="container-nav">
             <a href=#WEAPONS>WEAPONS</a>
-            <a href="">ARMOUR</a>
-            <a href="">BLOCKS</a>
-            <a href="">GAME MODES</a>
+            <a href="#BLOCKS">BLOCKS</a>
+            <a href="#BLOCKS">MOBS</a>
+            <a href="">NETHER</a>
         </div>
     </header>
     <div class="full-page">
@@ -87,11 +87,18 @@
         </div>
         <div class="BLOCOS">
             <div class="blocks">
-                <img class="block-item" src="https://minecraft.wiki/images/thumb/Note_Block_JE2_BE2.png/150px-Note_Block_JE2_BE2.png" id="imagem" alt="" onclick="tocarSom()">
+                <img class="note-block-item" src="https://minecraft.wiki/images/thumb/Note_Block_JE2_BE2.png/150px-Note_Block_JE2_BE2.png" id="imagem" alt="" onclick="tocarSom()">
                 <audio id="audio">
                     <source src="/assets/noteblocksound.mp3" type="audio/mp3">
-
                 </audio>
+                <audio id="audio2">
+                    <source src="/assets/minecraft-click.mp3" type="audio/mp3">
+                </audio>
+                <img class="note-block-item" src="/assets/redstonetorch.webp" id="redstone" alt="" onclick="trocarImagem()" width="150">
+                <source src="/assets/redstoneoff.webp">
+                <source src="/assets/lampon.webp">
+                <source src="/assets/lamp.webp"> 
+                <img src="/assets/lamp.webp" id="lamp" onload="OnOff()" >
                 
             </div>
 
