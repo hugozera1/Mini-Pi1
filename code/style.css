@@ -3,6 +3,15 @@ body{
     background-image: url(/assets/background2.webp);
     font-family: "Monocraft";
 }
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 .container-header{
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +47,7 @@ body{
 
 .item-container{
     display: flex;
-    height: 100%;
+    margin-bottom: 30px;
     background-color: rgba(0, 128, 0, 0);
 }
 
@@ -70,6 +79,7 @@ body{
     transform: translateY(-10px);
     transition: transform 0.5s ease-in-out;
     flex-direction: column;
+    transform: scale(0);
      
 }
 
@@ -80,8 +90,10 @@ body{
 .item4 .minecraft-item:hover + .after-items4 {
     opacity: .7;
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out,;
+    transform: translateY(-3px);
+    transform: scale(1.1);
+    transform: 0.5s ease-in-out;
     
     
 }
@@ -89,11 +101,25 @@ body{
     display: flex;
     opacity: .7;
     transition: transform 0.5s ease-in-out;
+    transform: scale(1);
 
+}
+.block-item:active{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
+    
 }
 
 
+   
 
+#imagem {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #aumentar {
+    transform: scale(1.2);
+  }
 
 .text-center{
     text-align: center;
