@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(34, 31, 37);
+    background-image: url(/assets/background2.webp);
     font-family: "Monocraft";
 }
 .container-header{
@@ -26,45 +26,74 @@ body{
 }
 .container-body {
     margin: 0;
-    background-color: rgba(30, 30, 222, 0.129);
+    background-color: rgba(165, 165, 186, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
-    width: 900px;
+    width: 800px;
 }
 
 
 .item-container{
     display: flex;
-    height: 800px;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0);
 }
 
 .minecraft-item {
-    transition: 500ms;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+    width: 100px;
+    
 }
 
 .minecraft-item:hover {
     transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.8;
+
+    
+    
 }
+
 
 .after-items1, 
 .after-items2, 
 .after-items3, 
 .after-items4 {
-    display: none; 
+    display: none;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+     
 }
 
 
-.item1 .minecraft-item-pickaxe:hover + .after-items1,
+.item1 .minecraft-item:hover + .after-items1,
 .item2 .minecraft-item:hover + .after-items2,
 .item3 .minecraft-item:hover + .after-items3,
 .item4 .minecraft-item:hover + .after-items4 {
+    opacity: .7;
     display: flex;
-    flex-direction: column;
-    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-10px);
+    
+    
 }
+.after-items1:hover,.after-items2:hover,.after-items3:hover,.after-items4:hover{
+    display: flex;
+    opacity: .7;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+
+
 
 .text-center{
     text-align: center;
@@ -72,4 +101,14 @@ body{
 .full-content{
     justify-content: center;
     display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.full-page{
+   width: 55%;
+   margin: 0 auto;
+   background-color: rgb(34, 31, 37);
+   height: 5000px;
+   
+
 }
