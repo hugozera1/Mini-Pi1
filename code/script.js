@@ -32,3 +32,7 @@ function OnOff(){
     
     
 }
+function audioporco(){
+    var audio = document.getElementById("audiopig");
+    audio.play();
+}
