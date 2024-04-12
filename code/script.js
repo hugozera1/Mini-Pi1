@@ -1,5 +1,6 @@
 function tocarSom() {
     var audio = document.getElementById("audio");
+    audio.currentTime= 0;
     audio.play();
     var imagem = document.getElementById("imagem");
     imagem.style.transform = "scale(1.2)";
@@ -16,6 +17,8 @@ function tocarSom() {
     }
     var audio = document.getElementById("audio2");
     audio.play();
+    audio.currentTime= 0.2;
+
 }
 function OnOff(){
     const torch = document.getElementById("redstone");
