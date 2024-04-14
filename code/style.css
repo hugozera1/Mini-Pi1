@@ -116,6 +116,11 @@ header{
     justify-content: center;
 
 }
+.MOBS{
+    display: flex;
+    justify-content: space-around;
+   
+}
 
 #imagem {
     transition: transform 0.3s ease-in-out;
