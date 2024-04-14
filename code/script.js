@@ -36,3 +36,15 @@ function audioporco(){
     var audio = document.getElementById("audiopig");
     audio.play();
 }
+function audiosheep(){
+    const sheep = document.getElementById("shep");
+    sheep.src = "/assets/sheep2.webp";
+
+    var audio = document.getElementById("shearsound");
+    audio.play();
+
+}
+function audiocreeper(){
+    var audio = document.getElementById("crepsound");
+    audio.play();
+}
