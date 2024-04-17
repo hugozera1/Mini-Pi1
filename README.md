@@ -21,10 +21,15 @@ O projeto está dividido em três partes principais:
 - **CSS:** O estilo visual da página foi estilizado utilizando CSS para tornar a experiência do usuário mais agradável e atraente.
 - **JavaScript:** Algumas interações dinâmicas na página foram implementadas usando JavaScript para melhorar a usabilidade e a funcionalidade.
 
+  ![image](https://github.com/hugozera1/Mini-Pi1/assets/161486790/cc280e03-4008-4aff-b12e-466387d88490)
+
+
 ## Como Contribuir
 
 Se deseja contribuir para o projeto, sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de recebimento (pull requests) através do GitHub. Qualquer ajuda para melhorar e expandir esta página é muito apreciada!
 
+## LINK DO SITE
+https://minecraft-collection.netlify.app/
 ## Autor
 
 Este projeto foi desenvolvido por  **Hugo Rodrigues**  https://github.com/hugozera1 Se tiver dúvidas ou sugestões, entre em contato através do email [hugouwu2077@gmail.com].
