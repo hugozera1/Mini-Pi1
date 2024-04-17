@@ -147,3 +147,17 @@ header{
    
 
 }
+
+.crafting-table {
+    position: relative;
+}
+
+.craft-menu {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 90%;
+    /* Adicione estilos adicionais para o menu de craft */
+}

@@ -48,3 +48,15 @@ function audiocreeper(){
     var audio = document.getElementById("crepsound");
     audio.play();
 }
+
+
+const craftingTableImg = document.getElementById('crafting-table-img');
+const craftMenu = document.getElementById('craft-menu');
+craftingTableImg.addEventListener('click', function() {
+    if (craftMenu.style.display === 'none') {
+        craftMenu.style.display = 'block';
+    } else {
+        craftMenu.style.display = 'none';
+    }
+});
+
